@@ -73,7 +73,7 @@ app.post('/api/notes', (request, response) => {
   }
   
   const note = {
-    contet: body.content,
+    content: body.content,
     important: Boolean(body.important) || false,
     id: generateId(),
   }
